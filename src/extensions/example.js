@@ -5,12 +5,16 @@ const yes = true
 const no = false
 
 // TODO: 1. Write a function that returns the type of its argument with a value of 'null' rather than 'object' for null
+const a =5;
+const b =9;
+console.log(a);
+a=b;
+console.log(a);
 function getType(v) {
   // Extra check for null as typeof null is 'object'!
   if (v === null) return 'null'
   else return typeof v
 }
-
 // do not edit the exported object.
 module.exports = {
   a: getType(aNull),
